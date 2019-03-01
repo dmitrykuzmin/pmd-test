@@ -1,0 +1,19 @@
+subprojects {
+    apply plugin: 'java-library'
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'pmd'
+
+    pmd {
+        toolVersion = "6.11.0"
+        consoleOutput= true
+    }
+
+    // Possible workaround.
+    // pmdMain.classpath += sourceSets.main.runtimeClasspath
+}

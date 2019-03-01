@@ -1,0 +1,5 @@
+dependencies {
+    
+    // Random dependency.
+    implementation "org.jboss.forge.roaster:roaster-api:2.20.1.Final"
+}
